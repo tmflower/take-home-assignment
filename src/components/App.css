@@ -14,3 +14,10 @@
 .App > .Footer {
 	margin-top: auto;
 }
+
+.App .ArtBtn {
+	border: none;
+	background-color: #ffffff;
+	margin: 1em;
+	text-align: left;
+}

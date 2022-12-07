@@ -26,14 +26,14 @@
  * @param {string} query
  * @returns {Promise<ArtworkSearchResult>}
  */
-export function searchArtworks(query) {
+export async function searchArtworks(query) {
 	/**
 	 * Get data from `ARTWORKS_SEARCH_RESULT.json`, whuch is served by our
 	 * local server.
 	 * TODO: replace with path to `/artworks/search/` endpoint,
 	 * as described in README.md.
 	 */
-	const requestUrl = `./ARTWORKS_SEARCH_RESULT.json`;
+	const requestUrl = `https://api.artic.edu/api/v1/artworks/search?q=${query}&query[term][is_public_domain]=true&fields=artist_title,date_display,id,image_id,thumbnail.alt_text,thumbnail.width,thumbnail.height,title`;
 
 	/**
 	 * We know the API serves JSON data, but
