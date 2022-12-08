@@ -76,40 +76,4 @@ export function App() {
 			<Footer />
 		</div>
 	);
-
-	// return (
-	// 	<div className="App">
-	// 		<h1>TCL Career Lab Art Finder</h1>
-	// 		{imageIsSelected === false ? (
-	// 			<div>
-	// 				<SearchForm onSearchSubmit={onSearchSubmit} />
-	// 				{artList.map((art, i) => (
-	// 					<div key={i}>
-	// 						<button
-	// 								className="ArtBtn"
-	// 								onClick={(event) => {
-	// 								setImageIsSelected(true);
-	// 								setImageId(art.image_id);
-	// 								setArtist(art.artist_title);
-	// 								setTitle(art.title);
-	// 							}}
-	// 							>
-	// 							{art.title} by {art.artist_title}
-	// 						</button>
-	// 					</div>
-	// 				))}
-	// 			</div>
-	// 		) : (
-	// 			<div>
-	// 				<button onClick={goBack}>Go Back</button>
-	// 				<ImageDetailsPage
-	// 					artist={artist}
-	// 					imageId={imageId}
-	// 					title={title}
-	// 				></ImageDetailsPage>
-	// 			</div>
-	// 		)}
-	// 		<Footer />
-	// 	</div>
-	// );
 }
