@@ -10,6 +10,8 @@ export function SearchForm({ onSearchSubmit }) {
 	}
 
 	function handleFormSubmit(evt) {
+		// Prevent the browser from refreshing when form is submitted.
+		// Resolves issue #2
 		evt.preventDefault();
 		onSearchSubmit(query);
 	}
